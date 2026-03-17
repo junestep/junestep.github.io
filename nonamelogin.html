@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--My meta tags containing thr meta charset and device screen width,
+    description, title and link of thr css--> 
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="noname-log-in-and-sign-up">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="bluface-gh-group">
+
+    <link rel="stylesheet" href="noname.css">
+
+    <body>
+        <header id="login-header">
+            <!--this is the header name for noname-->
+          <div class="noname-logo">
+            noname
+          </div>
+        </header>
+        <main id="login-main">
+          <!--This is the form data, including username,date of birth,gmail,telephone number
+          and region of residence-->
+          <form action="submit" method="post">
+
+            <!--username request-->
+              <!--first name request-->
+            <label for="first-name">First Name</label>
+            <input type="text" id="name" name="First-Name" minlength="3" maxlength="15"
+            required>
+            <!--last name request-->
+            <label for="last-name">Last Name</label>
+            <input type="text" id="name" name="Last-Name" minlength="3" maxlength="15"
+            required>
+
+              <!--user date of birth request-->
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob" name="Date of birth"  required>
+             
+            <!--Email request-->
+            <label for="email">User Email</label>
+            <input type="email" id="email" name="User-Email" placeholder="noname@gmail.com" required>
+
+            <!--User email password-->
+            <label for="password">Email Password</label>
+            <input type="password" required>
+
+            <!--User telephone number request-->
+            <label for="telephone">User Number</label>
+            <input type="number"  id="telephone" name="User telephone number" minlength="2" maxlength="10" required>
+
+            <!--user region of residence-->
+            <label for="region of residence">Region of residence</label>
+            <select name="Region of residence" required>
+                <option value="">---select here--</option>
+                <option value="greater-accra">Greater Accra</option>
+                <option value="volta-region">Volta Region</option>
+                <option value="eastern-region">Eatern Region</option>
+                <option value="oti-region">Oti Region</option>
+                <option value="savana-region">Savana Region</option>
+                <option value="central-region">Central Region</option>
+                <option value="western-region">Western Region</option>
+                <option value="bolgatanga">Bolgatanga</option>
+                <option value="western-region">Western Region</option>
+                <option value="bono-east">Bono East</option>
+                <option value="western-north">Western North</option>
+                <option value="northern-region">Northern Region</option>
+                <option value="north-east">North East</option>
+            </select>
+            
+
+            <div id="login-button">
+                <button type="reset">Reset</button>
+                <button type="submit">Log In</button>
+
+            </div>
+
+
+
+          </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
